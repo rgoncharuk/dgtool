@@ -94,6 +94,16 @@ You may define each package separately or add related nodes automatically based 
 
 The following format is supported:
 
-DependentsPrefix->PackageName->DependenciesSuffix
+[%DependentsPrefix%]%PackageName%[%DependenciesSuffix%]
 
-#### Dependent Prefix
+#### Dependent Prefixes
+
+I-\> add indirect dependents  
+D-\> add direct dependents
+\*-\> add all dependents
+
+#### Dependencies Suffixes
+
+-\>I add indirect dependencies 
+-\>D add direct dependencies
+-\>\* add all dependencies
