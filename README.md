@@ -1,12 +1,12 @@
 # Overview
 
-This tool may be used for composer package dependency visualisation. 
+This tool may be used for composer package dependency visualization. 
 It uses [GraphViz](https://www.graphviz.org/) for graph generation. 
 
 You may create a dependency graph for all packages located in a specific folder.
-Config file will allow you research denendencies, group packages with appropriate way, see circular dependencies, highlight specific subset of packages, etc.
+Config file will allow you research dependencies, group packages with an appropriate way, see circular dependencies, highlight a specific subset of packages, etc.
 
-Curently the tool graps all package.json files in mentioned dir and build dependencies based on section "require". All packages mentioned in "require" will be added to graph dispite they are not defined as packages in mentioned dir.
+Currently, the tool grabs all package.json files in mentioned dir and build dependencies based on section "require". All packages mentioned in "require" will be added to the graph despite they are not defined as packages in mentioned dir.
 
 # Environment initialization
 
@@ -17,12 +17,12 @@ sudo apt-get install graphviz
 
 Perform all appropriate steps to run php in console.
 
-Clone this repo to a specific place on your local mashine. 
+Clone this repo to a specific place on your local machine. 
 
 # Usage
 
-Run the tool with mentioned parameters. 
-As a result you will have a dot file with instructions for dot plus pdf file with graph generated based on instructions.
+Run the tool with the mentioned parameters. 
+As a result, you will have a dot file with instructions for [Dot](https://www.graphviz.org/) plus pdf file with graph generated based on instructions.
 
 Play with test artifacts 
 
@@ -32,78 +32,78 @@ php console.php --projectdir ./test/project --config ./test/testconfig.json --ou
 
 # Config
 
-Config helps organise information on graph with a way suitable for observation. Use ./test/testconfig.json as an example of config structure
+Config helps organize information on a graph with a way suitable for observation. Use ./test/testconfig.json as an example of config structure
 
 ## Scope
 
-If your project contains packages you do not want to add to graph use black\white list to define required scope. White list have priority. 
+If your project contains packages you do not want to add to the graph use the black\white list to define the required scope. The white list has a priority. 
 
-!!! Today the tool skips all not magento packages. It should be changed as soon as regexp rules will be added to scope.
+!!! Today the tool skips all not Magento packages. It should be changed as soon as regexp rules will be added to the scope.
 
 ## Groups
 
 Use groups to see packages as logically related unions.
-Group mode defines grouping behaviour
+Group mode defines grouping behavior
 
 #### None
 
-Such group will not have affect to graph generation. Use it for packages organisation within config file and possible resuse with other modes.
+Such a group will not have an effect on graph generation. Use it for packages organization within the config file and possible reuse with other modes.
 
 #### Hide
 
-All packages mentioned in such group will not be present on graph. Use this group to hide details not important for a specific moment.
+All packages mentioned in such a group will not be present on the graph. Use this group to hide details not important for a specific moment.
 
-Note that here we are talking just about visualisation effect. All hidden packages will be mentioned in dependency counts and dependency relations. 
+Note that here we are talking just about visualization effect. All hidden packages will be mentioned in dependency counts and dependency relations. 
 
 #### Bound
 
-All packages mentioned in such group will be grouped within visible borders. Gategory group name will be present within the same borers. Use this mode for logical packages grouping. 
+All packages mentioned in such a group will be grouped within visible borders. The category group name will be present within the same borders. Use this mode for logical packages grouping. 
 
 #### Merge
 
-All packages mentioned in such group will be merged to a single graph node and named with group name. All dependencies related with merged packages will be replaced to the same denendencies related with the merged node. 
+All packages mentioned in such a group will be merged to a single graph node and named with the group name. All dependencies related with merged packages will be replaced to the same dependencies related with the merged node. 
 
-All dependency counts will be affected by that merge. Merged node will be reflected as one package.
+All dependency counts will be affected by that merge. The merged node will be reflected as one package.
 
 Use this mode to scale view from packages dependencies to domains\functional areas dependencies.
 
-## Visual Efects
+## Visual Effects
 
 #### Nodes
 
-Each node will represented as a circle. (Style customiation will be added later)
+Each node will be represented as a circle. (Style customization will be added later)
 
-Package name will be splitted to parts for best feet within the node.
+The package name will be split to parts for best feet within the node.
 
-!!! Today magento package name prefixes are scipped to save space. Should be changed in the future with a more smart way of label modification.
+!!! Today Magento package name prefixes are skipped to save space. Should be changed in the future with a more smart way of label modification.
 
-Eaco node contaon information regarding dependency counts in the following format
+Each node contains information regarding dependency counts in the following format
 
-Indirect dependents -> Direct dependents -> NODE -> Direct Dependencies -> Indirect Dependencies
+Indirect dependents \-\> Direct dependents \-\> NODE \-\> Direct Dependencies \-\> Indirect Dependencies
 
 #### Dependencies
 
 Each dependency will be reflected with -> line.
-Direct and Indirect Circular dependencies wil be reflected with red -> lines
+Direct and Indirect Circular dependencies will be reflected with red -> lines
 
 ## Highlights
 
-Use that effect to highlight required packages and their dependencies within saved context.
+Use that effect to highlight required packages and their dependencies within the saved context.
 
-You may define each package separately or add related nodes automatically based on prefixes and sufixes. 
+You may define each package separately or add related nodes automatically based on prefixes and suffixes. 
 
 The following format is supported:
 
 [%DependentsPrefix%]%PackageName%[%DependenciesSuffix%]
 
-#### Dependent Prefixes
+| Dependent Prefixes  | Action |
+| :--- | :--- |
+| I-\>  | add indirect dependents  |
+| D-\>  | add direct dependents  |
+| \*\-\>  | add all dependents  |
 
-I-\> add indirect dependents  
-D-\> add direct dependents
-\*-\> add all dependents
-
-#### Dependencies Suffixes
-
--\>I add indirect dependencies 
--\>D add direct dependencies
--\>\* add all dependencies
+| Dependency Suffixes  | Action |
+| :--- | :--- |
+| \-\>I  | add indirect dependencies  |
+| \-\>D  | add direct dependencies  |
+| \-\>\*  | add all dependencies  |
