@@ -1,0 +1,48 @@
+{
+  "highlight" : [
+    "*->magento/module-none-category-b->*",
+    "*->magento/module-circular-dependency-b->*",
+    "magento/module-directly-depends-on-all->D"
+  ],
+"scope" : {
+  "black_list" : [
+    "magento/module-black-list-a"
+  ],
+  "white_list" : [
+  ]
+},
+"groups":[
+  {
+    "name" : "MERGE CATEGORY",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-merge-category-a",
+      "magento/module-merge-category-b"
+    ]
+  },
+  {
+    "name" : "HIDDEN CATEGORY",
+    "mode" : "hide",
+    "packages" : [
+      "magento/module-hidden-category-a",
+      "magento/module-hidden-category-b"
+    ]
+  },
+  {
+    "name" : "BOUND CATEGORY",
+    "mode" : "bound",
+    "packages" : [
+      "magento/module-bound-category-a",
+      "magento/module-bound-category-b"
+    ]
+  },
+  {
+    "name" : "NONE CATEGORY",
+    "mode" : "none",
+    "packages" : [
+      "magento/module-none-category-a",
+      "magento/module-none-category-b"
+    ]
+  }
+]
+}

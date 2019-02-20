@@ -1,0 +1,6 @@
+{
+    "name": "magento/module-bound-category-a",
+    "require": {
+      "magento/module-directly-required-for-all": "*"
+    }
+}

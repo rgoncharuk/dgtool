@@ -1,0 +1,7 @@
+{
+    "name": "magento/module-circular-dependency-b",
+    "require": {
+        "magento/module-circular-dependency-c": "*",
+        "magento/module-mentioned-just-as-dependency": "*"
+    }
+}

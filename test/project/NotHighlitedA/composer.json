@@ -1,0 +1,6 @@
+{
+    "name": "magento/module-not-highlited-a",
+    "require": {
+      "magento/module-not-highlited-b": "*"
+    }
+}

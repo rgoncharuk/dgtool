@@ -1,0 +1,274 @@
+{
+  "highlight" : [
+    "magento/module-catalog-inventory->D"
+  ],
+"scope" : {
+  "black_list" : [
+    "magento/module-test-join-directives",
+    "magento/module-test-module-integration-from-config",
+    "magento/module-b",
+    "magento/module-a",
+    "magento/module-first",
+    "magento/module-second",
+    "magento/module-test-module-message-queue-configuration",
+    "magento/module-sample-test",
+    "magento/module-test-module-message-queue-config-override",
+
+    "magento/module-version",
+    "magento/module-eav-graph-ql",
+    "magento/module-graph-ql",
+    "magento/module-store-graph-ql",
+    "magento/module-webapi-security",
+    "magento/module-webapi",
+    "magento/module-directory",
+    "magento/module-media-storage",
+    "magento/module-import-export",
+    "magento/module-email",
+    "magento/module-require-js",
+    "magento/module-swagger",
+    "magento/module-swagger-webapi-async",
+    "magento/module-swagger-webapi",
+    "magento/module-rss",
+    "magento/module-advanced-search",
+    "magento/admin-Magento_Catalog",
+    "magento/module-mysql-mq",
+    "magento/module-elasticsearch",
+    "magento/module-message-queue",
+    "magento/module-translation",
+    "magento/module-tinymce-3",
+    "magento/module-amqp",
+    "magento/module-sample-data",
+    "magento/module-google-adwords",
+    "magento/module-grouped-catalog-inventory",
+    "magento/module-backup",
+    "magento/module-store",
+    "magento/module-ui",
+    "magento/module-cron",
+    "magento/module-eav",
+    "magento/module-cache-invalidate",
+    "magento/module-cookie",
+    "magento/module-indexer",
+    "magento/module-developer",
+    "magento/module-encription-key",
+    "magento/module-encryption-key",
+    "magento/module-asynchronous-operations",
+    "magento/module-webapi-async",
+    "magento/module-deploy"
+  ],
+  "white_list" : []
+},
+"groups":[
+  {
+    "name" : "TAX",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-tax",
+      "magento/module-tax-import-export",
+      "magento/module-weee-graph-ql",
+      "magento/module-weee",
+      "magento/module-tax-graph-ql"
+    ]
+  },
+  {
+    "name" : "SHIPPING",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-usps",
+      "magento/module-ups",
+      "magento/module-shipping",
+      "magento/module-dhl",
+      "magento/module-offline-shipping",
+      "magento/module-fedex"
+    ]
+  },
+  {
+    "name" : "OMS",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-sales",
+      "magento/module-sales-graph-ql",
+      "magento/module-sales-sequence",
+      "magento/module-sales-analytics",
+      "magento/module-sales-inventory",
+      "magento/module-configurable-product-sales"
+    ]
+  },
+  {
+    "name" : "CHECKOUT",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-quote",
+      "magento/module-checkout",
+      "magento/module-quote-graph-ql",
+      "magento/module-checkout-agreements",
+      "magento/module-quote-analytics",
+      "magento/module-multishipping",
+      "magento/module-instant-purchase",
+      "magento/module-gift-message"
+    ]
+  },
+  {
+    "name" : "CATALOG",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-catalog",
+      "magento/module-catalog-graph-ql",
+      "magento/module-bundle",
+      "magento/module-bundle-graph-ql",
+      "magento/module-downloadable",
+      "magento/module-downloadable-graph-ql",
+      "magento/module-grouped-product",
+      "magento/module-grouped-product-graph-ql",
+      "magento/module-catalog-search",
+      "magento/module-configurable-product",
+      "magento/module-configurable-product-graph-ql",
+      "magento/module-layered-navigation",
+      "magento/module-downloadable-import-export",
+      "magento/module-swatches",
+      "magento/module-swatches-graph-ql",
+      "magento/module-catalog-analytics",
+      "magento/module-bundle-import-export",
+      "magento/module-search",
+      "magento/module-send-friend",
+      "magento/module-send-friend-graph-ql",
+      "magento/module-product-video",
+      "magento/module-grouped-import-export",
+      "magento/module-configurable-import-export",
+      "magento/module-catalog-import-export",
+      "magento/module-product-alert",
+      "magento/module-swatches-layered-navigation"
+    ]
+  },
+  {
+    "name" : "CUSTOMER",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-customer",
+      "magento/module-customer-graph-ql",
+      "magento/module-customer-analytics",
+      "magento/module-customer-import-export",
+      "magento/module-persistent",
+      "magento/module-newsletter",
+      "magento/module-user"
+    ]
+  },
+  {
+    "name" : "ADMIN",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-admin-notification",
+      "magento/module-authorization",
+      "magento/module-config",
+      "magento/module-security",
+      "magento/module-backend",
+      "magento/module-integration",
+      "magento/module-marketplace",
+      "magento/module-release-notification"
+    ]
+  },
+  {
+    "name" : "STOREFRONT",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-captcha",
+      "magento/module-catalog-url-rewrite",
+      "magento/module-cms-url-rewrite",
+      "magento/module-catalog-url-rewrite-graph-ql",
+      "magento/module-cms-url-rewrite-graph-ql",
+      "magento/module-page-cache",
+      "magento/module-robots",
+      "magento/module-sitemap",
+      "magento/module-theme",
+      "magento/module-theme-graph-ql",
+      "magento/module-url-rewrite",
+      "magento/module-url-rewrite-graph-ql"
+    ]
+  },
+  {
+    "name" : "PAYMENTS",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-payment",
+      "magento/module-offline-payments",
+      "magento/module-authorizenet",
+      "magento/module-vault",
+      "magento/module-braintree",
+      "magento/module-paypal"
+    ]
+  },
+  {
+    "name" : "CMS",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-cms-graph-ql",
+      "magento/module-cms",
+      "magento/module-variable",
+      "magento/module-google-optimizer",
+      "magento/module-widget",
+      "magento/module-catalog-widget",
+      "magento/module-contact"
+    ]
+  },
+  {
+    "name" : "REVIEWS",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-review",
+      "magento/module-review-analytics"
+    ]
+  },
+  {
+    "name" : "PROMOTIONS",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-catalog-rule",
+      "magento/module-rule",
+      "magento/module-sales-rule",
+      "magento/module-catalog-rule-configurable"
+    ]
+  },
+  {
+    "name" : "REPORTS",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-analytics",
+      "magento/module-reports",
+      "magento/module-google-analytics",
+      "magento/module-new-relic-reporting"
+    ]
+  },
+  {
+    "name" : "WISHLIST",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-wishlist",
+      "magento/module-wishlist-graph-ql",
+      "magento/module-wishlist-analytics"
+    ]
+  },
+  {
+    "name" : "RISK",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-signifyd"
+    ]
+  },
+  {
+    "name" : "PRICING",
+    "mode" : "merge",
+    "packages" : [
+      "magento/module-advanced-pricing-import-export",
+      "magento/module-msrp",
+      "magento/module-currency-symbol"
+    ]
+  },
+  {
+    "name" : "INVENTORY",
+    "mode" : "bound",
+    "packages" : [
+      "magento/module-catalog-inventory",
+      "magento/module-catalog-inventory-graph-ql"
+    ]
+  }
+]
+}

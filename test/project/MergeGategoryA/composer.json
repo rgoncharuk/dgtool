@@ -1,0 +1,6 @@
+{
+    "name": "magento/module-merge-category-a",
+    "require": {
+      "magento/module-directly-required-for-all": "*"
+    }
+}

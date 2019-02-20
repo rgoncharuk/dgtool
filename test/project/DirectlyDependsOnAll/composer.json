@@ -1,0 +1,14 @@
+{
+    "name": "magento/module-directly-depends-on-all",
+    "require": {
+        "magento/module-merge-category-a": "*",
+        "magento/module-merge-category-b": "*",
+        "magento/module-hidden-category-a": "*",
+        "magento/module-hidden-category-b": "*",
+        "magento/module-bound-category-a": "*",
+        "magento/module-bound-category-b": "*",
+        "magento/module-none-category-a": "*",
+        "magento/module-none-category-b": "*",
+        "magento/module-black-list-a": "*"
+    }
+}

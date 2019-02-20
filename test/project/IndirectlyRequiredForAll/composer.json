@@ -1,0 +1,5 @@
+{
+    "name": "magento/module-indirectly-required-for-all",
+    "require": {
+    }
+}

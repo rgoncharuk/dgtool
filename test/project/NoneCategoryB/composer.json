@@ -1,0 +1,6 @@
+{
+    "name": "magento/module-none-category-b",
+    "require": {
+      "magento/module-directly-required-for-all": "*"
+    }
+}

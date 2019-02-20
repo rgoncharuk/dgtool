@@ -1,0 +1,6 @@
+{
+    "name": "magento/module-indirectly-depends-on-all",
+    "require": {
+        "magento/module-directly-depends-on-all": "*"
+    }
+}

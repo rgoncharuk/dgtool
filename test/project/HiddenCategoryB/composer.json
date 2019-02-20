@@ -1,0 +1,6 @@
+{
+    "name": "magento/module-hidden-category-b",
+    "require": {
+      "magento/module-directly-required-for-all": "*"
+    }
+}
