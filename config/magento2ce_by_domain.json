@@ -1,6 +1,5 @@
 {
   "highlight" : [
-    "magento/module-catalog-inventory->D"
   ],
 "scope" : {
   "black_list" : [
@@ -264,7 +263,7 @@
   },
   {
     "name" : "INVENTORY",
-    "mode" : "bound",
+    "mode" : "merge",
     "packages" : [
       "magento/module-catalog-inventory",
       "magento/module-catalog-inventory-graph-ql"
