@@ -94,7 +94,7 @@ You may define each package separately or add related nodes automatically based 
 
 The following format is supported:
 
-[%DependentsPrefix%]%PackageName%[%DependenciesSuffix%]
+[%DependentsPrefix%]PackageName[%DependenciesSuffix%]
 
 | Dependent Prefixes  | Action |
 | :--- | :--- |
