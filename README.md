@@ -53,7 +53,7 @@ Such a group will not have an effect on graph generation. Use it for packages or
 
 All packages mentioned in such a group will not be present on the graph. Use this group to hide details not important for a specific moment.
 
-Note that here we are talking just about visualization effect. All hidden packages will be mentioned in dependency counts and dependency relations. 
+Note that here we are talking just about visualization effect. All hidden packages will be mentioned in dependency counts and dependency relations. If you want to remove some packages from the entire context use the black\white lists.
 
 #### Bound
 
